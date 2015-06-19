@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FISTriviaTableViewController : UITableViewController
+@property (nonatomic) NSInteger selectedRow;
 @property (strong, nonatomic) NSArray *trivia;
 
 @end

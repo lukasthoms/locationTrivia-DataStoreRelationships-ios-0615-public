@@ -8,6 +8,7 @@
 #import "FISLocation.h"
 #import "FISLocationsTableViewController.h"
 #import "FISTriviaTableViewController.h"
+#import "FISNewTriviaViewController.h"
 
 @interface FISLocationsTableViewController ()
 
@@ -160,6 +161,7 @@
         FISTriviaTableViewController *triviaVC = segue.destinationViewController;
         
         triviaVC.trivia = location.trivia;
+        triviaVC.selectedRow = ip.row;
     }
     
 
